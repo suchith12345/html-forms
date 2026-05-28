@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      table {
+        color: yellow;
+        box-shadow: 10px 10px 25px yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Course Registration Form</h3>
+    <form action="">
+      <table border="1" cellpadding="10" cellspacing="10">
+        <tr>
+          <th colspan="2">Personal Details</th>
+        </tr>
+        <tr>
+          <td>
+            <label for="fname">First Name</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="Ex: Suchith"
+              id="fname"
+              name="firstname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="lname">Surname</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              placeholder="Ex: Gowda R"
+              id="lname"
+              name="lastname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="mobileNumber">Mobile Number</label>
+          </td>
+          <td>
+            <input
+              type="tel"
+              placeholder="Ex: 9876543210"
+              id="mobileNumber"
+              name="mobile"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email</label>
+          </td>
+          <td>
+            <input
+              type="email"
+              placeholder="Ex: suchith@gmail.com"
+              id="email"
+              name="email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Password</label>
+          </td>
+          <td>
+            <input
+              type="password"
+              placeholder="Minimum 5 characters"
+              id="password"
+              name="password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="cpassword">Confirm Password</label>
+          </td>
+          <td>
+            <input
+              type="password"
+              placeholder="Re-enter password"
+              id="cpassword"
+              name="cpassword"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dob">DOB</label>
+          </td>
+          <td>
+            <input type="date" id="dob" name="dob" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Gender</label>
+          </td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="country">Select Country</label>
+          </td>
+          <td>
+            <select id="country" name="country">
+              <option disabled selected hidden>--- Select ---</option>
+              <option value="INDIA">INDIA</option>
+              <option value="USA">USA</option>
+              <option value="CHINA">CHINA</option>
+              <option value="RUSSIA">RUSSIA</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="picture">Upload Picture</label>
+          </td>
+          <td>
+            <input type="file" id="picture" name="picture" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <button type="submit">Apply</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <br />
+    <form>
+      <table border="2px" cellpadding="10px" cellspacing="10px">
+        <tr>
+          <th colspan="2">Course Details</th>
+        </tr>
+        <tr>
+          <td><label for="course">Select Course</label></td>
+          <td>
+            <select id="course" name="course">
+              <option value="" disabled selected hidden>--- Select ---</option>
+              <option value="java">java</option>
+              <option value="SQL">SQL</option>
+              <option value="JAVASCRIPT">JAVASCRIPT</option>
+              <option value="html&css">html&css</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Delivery Mode</label>
+          </td>
+
+          <td>
+            <input
+              type="radio"
+              id="online"
+              name="deliverymode"
+              value="online"
+            />
+
+            <label for="online"> ONLINE </label>
+
+            <input
+              type="radio"
+              id="offline"
+              name="deliverymode"
+              value="offline"
+            />
+
+            <label for="offline"> OFFLINE </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="comments"> Comments </label>
+          </td>
+
+          <td>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              cols="20"
+              placeholder="Enter your comments here....."
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" id="submit" name="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <h2>Revisinal of the forms</h2>
+    <img src="/Screenshot 2026-05-27 165731.png" alt="Image is not found"/ width="500" height="500"/>
+    <img src="/Screenshot 2026-05-27 165746.png" alt="Image is not found" width="500" height="500"/>
+    <img src="/Screenshot 2026-05-27 165818.png" alt="Image is not found" width="500" height="500"/>
+  </body>
+</html>
